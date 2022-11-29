@@ -1,7 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from "react";
+import { useGlobalState } from "./context";
 
 const Submenu = () => {
-  return <h2>submenu component</h2>
-}
+  const data = useGlobalState();
+  console.log(data);
+  return <h2>submenu component</h2>;
+};
 
-export default Submenu
+export default Submenu;
